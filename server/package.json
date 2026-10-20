@@ -1,0 +1,20 @@
+{
+  "name": "kindconnect-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "REST API for the KindConnect donation & charity app",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "reset-db": "node src/reset.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

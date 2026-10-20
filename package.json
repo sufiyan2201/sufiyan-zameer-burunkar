@@ -1,0 +1,14 @@
+{
+  "name": "kindconnect",
+  "private": true,
+  "version": "1.0.0",
+  "description": "KindConnect - donation & charity app (React + Express + SQLite)",
+  "scripts": {
+    "setup": "npm install && npm install --prefix server && npm install --prefix client && node scripts/setup-env.js",
+    "dev": "concurrently -n api,web -c blue,green \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "reset-db": "npm run reset-db --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
